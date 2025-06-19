@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #2c3e50; /* Warna latar belakang gelap */
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+    overflow: hidden; /* Mencegah scrollbar muncul karena confetti */
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #ecf0f1;
+}
+
+#surpriseButton {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #e74c3c; /* Merah */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#surpriseButton:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+#birthdayMessage {
+    margin-top: 30px;
+    font-size: 1.5em;
+    animation: fadeIn 2s forwards;
+}
+
+#birthdayMessage h2 {
+    color: #f1c40f; /* Kuning Emas */
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
