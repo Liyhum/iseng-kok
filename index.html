@@ -5,10 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kejutan Spesial Untukmu!</title>
     <link rel="stylesheet" href="style.css">
-</head><body>
+</head>
+<body>
     <div class="container" id="container">
-        <h1>Hai Sayang! Ada Sesuatu Untukmu...</h1>
-        <button id="surpriseButton">Klik di Sini!</button>
+        <div id="initialScreen">
+            <h1>Hai Sayang! Ada Sesuatu Untukmu...</h1>
+            <p>Tapi, main game dulu yuk!</p>
+            <button id="surpriseButton">Klik di Sini Untuk Mulai!</button>
+        </div>
+
+        <div id="gameContainer" class="hidden">
+            <h2>Tebak di mana kartu ❤️ bersembunyi?</h2>
+            <div id="cardArea">
+                </div>
+            <p id="gameMessage"></p>
+        </div>
+
         <div id="birthdayMessage" class="hidden">
             <h2>I Love You Selin!</h2>
             <p>Semangat kerja yaaaaa maaf aku ga ada di samping kamu. Aku sayang kamu! ❤️</p>
